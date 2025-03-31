@@ -5,3 +5,4 @@ db_password = os.environ.get('USER_PASS')
 
 print(db_user)
 print(db_password)
+# "dest": "django_blog/wsgi.py"

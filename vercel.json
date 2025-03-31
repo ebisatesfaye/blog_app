@@ -6,8 +6,10 @@
     }],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "django_blog/wsgi.py"
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+          
+             
         }
     ]
 }
