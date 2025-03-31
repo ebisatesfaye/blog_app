@@ -2,12 +2,7 @@
     "builds": [{
         "src": "django_blog/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" },
-        "build": {
-          "env": {
-            "PG_CONFIG": "/usr/local/bin/pg_config"
-          }
-        } 
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
