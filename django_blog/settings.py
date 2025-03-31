@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-8l+^h83j7dskq(2bdth3cbqzh#_+d#g5lw2r!@=w+iw$8(d4(g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+# ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -123,8 +124,8 @@ import os
 # STATIC_URL = '/static/'
 # STATICFILES_DIRS = [BASE_DIR / 'blog/static/']
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]  # Where Django looks for static files
+STATIC_URL = '/blog/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "blog/static/")]  # Where Django looks for static files
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")  # Where collectstatic puts them
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
