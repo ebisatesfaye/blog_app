@@ -1,3 +1,6 @@
+#web: gunicorn django_blog.wsgi
+
+
 import os
 from dotenv import load_dotenv  
 import dj_database_url
