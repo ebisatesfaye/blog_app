@@ -262,7 +262,7 @@ SECRET_KEY = 'django-insecure-8l+^h83j7dskq(2bdth3cbqzh#_+d#g5lw2r!@=w+iw$8(d4(g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','blog-app-ebisa.up.railway.app']
+ALLOWED_HOSTS = ['blog-app-ebisa.up.railway.app']
 CSRF_TRUSTED_ORIGINALS = ['htts://blog-app-ebisa.up.railway.app']
 # ALLOWED_HOSTS = ['*']
 
@@ -309,7 +309,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'django_blog.wsgi.application'
-
+PORT = 8080
 # Database configuration for Railway PostgreSQL
 DATABASES = {
     'default': dj_database_url.parse(os.getenv('DATABASE_URL'))
