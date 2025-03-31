@@ -26,10 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8l+^h83j7dskq(2bdth3cbqzh#_+d#g5lw2r!@=w+iw$8(d4(g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
-# ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -80,12 +80,6 @@ WSGI_APPLICATION = 'django_blog.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-
-
-
-
-
 
 
 # DATABASES = {
@@ -154,7 +148,7 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")  # Where collectstatic puts them
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]  # Where Django looks for static files
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "blog")]  # Where Django looks for static files
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
