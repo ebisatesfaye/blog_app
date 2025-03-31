@@ -52,7 +52,7 @@ urlpatterns = [
         name='password_reset_complete',
     ),
 
-    path('', include('blog.urls')),
+    path('/', include('blog.urls')),
 
 ]
 if settings.DEBUG:
