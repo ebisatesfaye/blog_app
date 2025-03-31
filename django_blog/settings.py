@@ -120,7 +120,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 import os
 
-STATIC_URL = 'blog/static/'
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [BASE_DIR / 'blog/static/']
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]  # Where Django looks for static files
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")  # Where collectstatic puts them
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
