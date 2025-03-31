@@ -8,8 +8,12 @@
         {
             "src": "/static/(.*)",
             "dest": "/static/$1"
-          
-             
-        }
+          },
+          {
+            "src": "(.*)",
+            "dest": "django_blog/wsgi.py"
+          }
     ]
 }
+
+
